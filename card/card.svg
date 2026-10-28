@@ -1,63 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="330" viewBox="0 0 1000 330" role="img" aria-label="Code quality metrics">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1e1e2e"/>
-      <stop offset="100%" stop-color="#181825"/>
-    </linearGradient>
-    <linearGradient id="barBase" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#313244"/>
-      <stop offset="100%" stop-color="#292c3c"/>
-    </linearGradient>
-    <linearGradient id="uniqFill" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#89b4fa"/>
-      <stop offset="55%" stop-color="#b4befe"/>
-      <stop offset="100%" stop-color="#cba6f7"/>
-    </linearGradient>
-    <clipPath id="round"><rect width="1000" height="330" rx="16"/></clipPath>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Code quality">
+  <defs><clipPath id="r"><rect width="1200" height="675" rx="16"/></clipPath></defs>
+  <g clip-path="url(#r)">
 
-  <g clip-path="url(#round)">
-    <rect width="1000" height="330" fill="url(#bg)"/>
+    <rect width="1200" height="675" fill="#1e1e2e"/>
 
-    <!-- 标题 -->
-    <g font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace">
-      <text x="56" y="58" fill="#cdd6f4" font-size="18" font-weight="700" letter-spacing="0.4">CODE QUALITY</text>
-      <text x="56" y="79" fill="#585b70" font-size="11" letter-spacing="0.4">STATIC ANALYSIS · ALL REPOS</text>
+    <!-- 标题行 -->
+    <text x="76" y="118" fill="#cdd6f4" font-size="52" font-weight="700"
+          font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace" letter-spacing="0.5">Code Quality</text>
 
-      <text x="944" y="55" text-anchor="end" fill="#585b70" font-size="10" letter-spacing="0.4">QUALITY GATES</text>
-      <text x="944" y="79" text-anchor="end" font-family="'JetBrains Mono',monospace">
-        <tspan fill="#a6e3a1" font-size="16" font-weight="700">11</tspan><tspan fill="#45475a" font-size="11"> pass</tspan>
-        <tspan fill="#45475a" font-size="11">   </tspan>
-        <tspan fill="#f38ba8" font-size="16" font-weight="700">5</tspan><tspan fill="#45475a" font-size="11"> fail</tspan>
-      </text>
-    </g>
+    <!-- 评级徽章（原头像位） -->
+    <circle cx="112" cy="188" r="42" fill="#313244"/>
+    <text x="112" y="204" text-anchor="middle" fill="#a6e3a1" font-size="44" font-weight="700"
+          font-family="'JetBrains Mono',monospace">A</text>
+    <text x="182" y="180" fill="#cdd6f4" font-size="28" font-weight="600"
+          font-family="'JetBrains Mono',ui-monospace,monospace">Mid-level Developer</text>
+    <text x="182" y="212" fill="#6c7086" font-size="21"
+          font-family="'JetBrains Mono',ui-monospace,monospace">Above 36% of people · 2.98 / 6</text>
 
-    <line x1="56" y1="100" x2="944" y2="100" stroke="#313244" stroke-width="1"/>
+    <!-- 分栏线 -->
+    <line x1="76" y1="268" x2="1124" y2="268" stroke="#313244" stroke-width="2"/>
+
+    <!-- 左栏：评级说明 -->
+    <text x="76" y="308" fill="#6c7086" font-size="18" letter-spacing="1"
+          font-family="'JetBrains Mono',ui-monospace,monospace">OVERALL RATING</text>
+    <text x="76" y="392" fill="#cdd6f4" font-size="80" font-weight="700" letter-spacing="-3"
+          font-family="'JetBrains Mono',monospace">A</text>
+    <text x="136" y="392" fill="#585b70" font-size="26"
+          font-family="'JetBrains Mono',monospace">2.98<tspan font-size="18"> / 6</tspan></text>
+
+    <!-- 左栏：质量门 -->
+    <text x="76" y="468" fill="#6c7086" font-size="18" letter-spacing="1"
+          font-family="'JetBrains Mono',ui-monospace,monospace">QUALITY GATES</text>
+    <text x="76" y="512" font-family="'JetBrains Mono',monospace">
+      <tspan fill="#a6e3a1" font-size="34" font-weight="700">11</tspan><tspan fill="#585b70" font-size="20"> pass</tspan>
+      <tspan fill="#45475a" font-size="20">   </tspan>
+      <tspan fill="#f38ba8" font-size="34" font-weight="700">5</tspan><tspan fill="#585b70" font-size="20"> fail</tspan>
+    </text>
+
+    <!-- 左栏：底标签 -->
+    <rect x="76" y="556" width="330" height="48" rx="24" fill="none" stroke="#585b70" stroke-width="2"/>
+    <text x="241" y="588" text-anchor="middle" fill="#cdd6f4" font-size="21"
+          font-family="'JetBrains Mono',ui-monospace,monospace">Open-source contributor</text>
+
+    <!-- 右栏：四项指标 -->
+    <text x="600" y="308" fill="#6c7086" font-size="18" letter-spacing="1"
+          font-family="'JetBrains Mono',ui-monospace,monospace">CODE QUALITY</text>
 
     <g font-family="'JetBrains Mono',ui-monospace,monospace">
 
-      <!-- Uniqueness 4.70 — 主角，粗条 + 渐变色 + 大字号 -->
-      <text x="56" y="140" fill="#cdd6f4" font-size="15" font-weight="700">Uniqueness</text>
-      <text x="944" y="142" text-anchor="end" fill="#cba6f7" font-size="26" font-weight="700" letter-spacing="-0.5">4.70</text>
-      <rect x="56" y="152" width="888" height="13" rx="6.5" fill="url(#barBase)"/>
-      <rect x="56" y="152" width="835" height="13" rx="6.5" fill="url(#uniqFill)"/>
+      <!-- Uniqueness 4.70 -->
+      <text x="600" y="356" fill="#cdd6f4" font-size="24" font-weight="700">Uniqueness</text>
+      <text x="1124" y="356" text-anchor="end" fill="#cba6f7" font-size="26" font-weight="700">4.70</text>
+      <rect x="600" y="368" width="524" height="16" rx="8" fill="#45475a"/>
+      <rect x="600" y="368" width="493" height="16" rx="8" fill="#cba6f7"/>
 
-      <!-- 其余三项 4.x — 细条，同色系不同色相 -->
-      <text x="56" y="203" fill="#a6adc8" font-size="13">Reliability</text>
-      <text x="944" y="203" text-anchor="end" fill="#89b4fa" font-size="15">3.96</text>
-      <rect x="56" y="212" width="888" height="7" rx="3.5" fill="url(#barBase)"/>
-      <rect x="56" y="212" width="703" height="7" rx="3.5" fill="#89b4fa"/>
+      <!-- Maintainability 4.58 -->
+      <text x="600" y="424" fill="#cdd6f4" font-size="24">Maintainability</text>
+      <text x="1124" y="424" text-anchor="end" fill="#94e2d5" font-size="24">4.58</text>
+      <rect x="600" y="436" width="524" height="16" rx="8" fill="#45475a"/>
+      <rect x="600" y="436" width="480" height="16" rx="8" fill="#94e2d5"/>
 
-      <text x="56" y="243" fill="#a6adc8" font-size="13">Security</text>
-      <text x="944" y="243" text-anchor="end" fill="#89dceb" font-size="15">4.32</text>
-      <rect x="56" y="252" width="888" height="7" rx="3.5" fill="url(#barBase)"/>
-      <rect x="56" y="252" width="767" height="7" rx="3.5" fill="#89dceb"/>
+      <!-- Security 4.32 -->
+      <text x="600" y="492" fill="#cdd6f4" font-size="24">Security</text>
+      <text x="1124" y="492" text-anchor="end" fill="#89dceb" font-size="24">4.32</text>
+      <rect x="600" y="504" width="524" height="16" rx="8" fill="#45475a"/>
+      <rect x="600" y="504" width="453" height="16" rx="8" fill="#89dceb"/>
 
-      <text x="56" y="283" fill="#a6adc8" font-size="13">Maintainability</text>
-      <text x="944" y="283" text-anchor="end" fill="#94e2d5" font-size="15">4.58</text>
-      <rect x="56" y="292" width="888" height="7" rx="3.5" fill="url(#barBase)"/>
-      <rect x="56" y="292" width="813" height="7" rx="3.5" fill="#94e2d5"/>
+      <!-- Reliability 3.96 -->
+      <text x="600" y="560" fill="#cdd6f4" font-size="24">Reliability</text>
+      <text x="1124" y="560" text-anchor="end" fill="#89b4fa" font-size="24">3.96</text>
+      <rect x="600" y="572" width="524" height="16" rx="8" fill="#45475a"/>
+      <rect x="600" y="572" width="415" height="16" rx="8" fill="#89b4fa"/>
 
     </g>
+
   </g>
 </svg>
