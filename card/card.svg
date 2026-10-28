@@ -15,7 +15,7 @@
     <text x="182" y="180" fill="#cdd6f4" font-size="28" font-weight="600"
           font-family="'JetBrains Mono',ui-monospace,monospace">Mid-level Developer</text>
     <text x="182" y="212" fill="#6c7086" font-size="21"
-          font-family="'JetBrains Mono',ui-monospace,monospace">Above 36% of people · 2.98 / 6</text>
+          font-family="'JetBrains Mono',ui-monospace,monospace">Above 36% of people · 5.96 / 6</text>
 
     <!-- 分栏线 -->
     <line x1="76" y1="268" x2="1124" y2="268" stroke="#313244" stroke-width="2"/>
@@ -26,7 +26,7 @@
     <text x="76" y="392" fill="#cdd6f4" font-size="80" font-weight="700" letter-spacing="-3"
           font-family="'JetBrains Mono',monospace">A</text>
     <text x="136" y="392" fill="#585b70" font-size="26"
-          font-family="'JetBrains Mono',monospace">2.98<tspan font-size="18"> / 6</tspan></text>
+          font-family="'JetBrains Mono',monospace">5.96<tspan font-size="18"> / 6</tspan></text>
 
     <!-- 左栏：质量门 -->
     <text x="76" y="468" fill="#6c7086" font-size="18" letter-spacing="1"
@@ -56,21 +56,21 @@
 
       <!-- Maintainability 4.58 -->
       <text x="600" y="424" fill="#cdd6f4" font-size="24">Maintainability</text>
-      <text x="1124" y="424" text-anchor="end" fill="#94e2d5" font-size="24">4.58</text>
+      <text x="1124" y="424" text-anchor="end" fill="#94e2d5" font-size="24">4.6</text>
       <rect x="600" y="436" width="524" height="16" rx="8" fill="#45475a"/>
-      <rect x="600" y="436" width="480" height="16" rx="8" fill="#94e2d5"/>
+      <rect x="600" y="436" width="482" height="16" rx="8" fill="#94e2d5"/>
 
       <!-- Security 4.32 -->
       <text x="600" y="492" fill="#cdd6f4" font-size="24">Security</text>
-      <text x="1124" y="492" text-anchor="end" fill="#89dceb" font-size="24">4.32</text>
+      <text x="1124" y="492" text-anchor="end" fill="#89dceb" font-size="24">4.3</text>
       <rect x="600" y="504" width="524" height="16" rx="8" fill="#45475a"/>
-      <rect x="600" y="504" width="453" height="16" rx="8" fill="#89dceb"/>
+      <rect x="600" y="504" width="451" height="16" rx="8" fill="#89dceb"/>
 
       <!-- Reliability 3.96 -->
       <text x="600" y="560" fill="#cdd6f4" font-size="24">Reliability</text>
-      <text x="1124" y="560" text-anchor="end" fill="#89b4fa" font-size="24">3.96</text>
+      <text x="1124" y="560" text-anchor="end" fill="#89b4fa" font-size="24">4.0</text>
       <rect x="600" y="572" width="524" height="16" rx="8" fill="#45475a"/>
-      <rect x="600" y="572" width="415" height="16" rx="8" fill="#89b4fa"/>
+      <rect x="600" y="572" width="419" height="16" rx="8" fill="#89b4fa"/>
 
     </g>
 
