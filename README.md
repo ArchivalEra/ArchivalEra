@@ -1,5 +1,3 @@
-<a href="https://gitroll.io/profile/ujVjS2kFmufgUEEukKw1fKyIxIXq2" target="_blank">
-  <img src="https://gitroll.io/api/badges/profiles/v1/ujVjS2kFmufgUEEukKw1fKyIxIXq2?theme=darkEmerald" alt="GitRoll Profile Badge" width="100%">
-</a>
+<img src="https://static.mango-mesa.ccwu.cc/card.svg" alt="Code Quality" width="100%">
 
 Summit(No More Running Mix)-Kuraine

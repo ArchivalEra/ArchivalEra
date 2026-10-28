@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Code quality card">
+  <defs>
+    <linearGradient id="glow" x1="1" y1="0" x2="0.1" y2="1">
+      <stop offset="0%" stop-color="#89b4fa" stop-opacity="0.16"/>
+      <stop offset="40%" stop-color="#cba6f7" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#1e1e2e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#89b4fa"/>
+      <stop offset="55%" stop-color="#b4befe"/>
+      <stop offset="100%" stop-color="#cba6f7"/>
+    </linearGradient>
+    <clipPath id="rad"><rect width="1200" height="420" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#rad)">
+    <rect width="1200" height="420" fill="#1e1e2e"/>
+    <rect width="1200" height="420" fill="url(#glow)"/>
+
+    <g font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,monospace">
+      <text x="64" y="78" fill="#cdd6f4" font-size="27" font-weight="700" letter-spacing="0.5">Code Quality</text>
+      <text x="64" y="106" fill="#6c7086" font-size="15">Static analysis snapshot</text>
+      <text x="1136" y="80" text-anchor="end" fill="#6c7086" font-size="15">5.96 / 6</text>
+    </g>
+
+    <!-- 整体评级 -->
+    <circle cx="150" cy="228" r="68" fill="#181825" stroke="#313244" stroke-width="2"/>
+    <path d="M 150 160 A 68 68 0 1 1 149.4 160" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+    <text x="150" y="230" text-anchor="middle" dominant-baseline="central"
+          font-family="'JetBrains Mono',monospace" font-size="62" font-weight="700" fill="#a6e3a1">A</text>
+
+    <g font-family="'JetBrains Mono',ui-monospace,monospace">
+      <text x="256" y="205" fill="#cdd6f4" font-size="52" font-weight="700">5.96</text>
+      <text x="256" y="233" fill="#6c7086" font-size="15">Overall Rating</text>
+      <text x="256" y="272" fill="#a6adc8" font-size="15">Above <tspan fill="#f9e2af" font-weight="700">36%</tspan> of people</text>
+    </g>
+
+    <g font-family="'JetBrains Mono',ui-monospace,monospace" font-size="17">
+      <text x="540" y="176" fill="#cdd6f4">Reliability</text>
+      <rect x="540" y="192" width="408" height="14" rx="7" fill="#313244"/>
+      <rect x="540" y="192" width="270" height="14" rx="7" fill="#89b4fa"/>
+      <text x="1104" y="205" text-anchor="end" fill="#6c7086" font-size="14">0.66</text>
+
+      <text x="540" y="248" fill="#cdd6f4">Security</text>
+      <rect x="540" y="264" width="408" height="14" rx="7" fill="#313244"/>
+      <rect x="540" y="264" width="368" height="14" rx="7" fill="#a6e3a1"/>
+      <text x="1104" y="277" text-anchor="end" fill="#6c7086" font-size="14">0.90</text>
+
+      <text x="540" y="320" fill="#cdd6f4">Maintainability</text>
+      <rect x="540" y="336" width="408" height="14" rx="7" fill="#313244"/>
+      <rect x="540" y="336" width="316" height="14" rx="7" fill="#cba6f7"/>
+      <text x="1104" y="349" text-anchor="end" fill="#6c7086" font-size="14">0.78</text>
+    </g>
+
+    <g font-family="'JetBrains Mono',ui-monospace,monospace" font-size="14">
+      <rect x="540" y="372" width="200" height="30" rx="15" fill="none" stroke="#45475a"/>
+      <text x="640" y="392" text-anchor="middle" fill="#a6adc8">Open-source contributor</text>
+      <rect x="752" y="372" width="146" height="30" rx="15" fill="none" stroke="#45475a"/>
+      <text x="825" y="392" text-anchor="middle" fill="#a6adc8">Top 95% in CN</text>
+      <rect x="910" y="372" width="106" height="30" rx="15" fill="none" stroke="#45475a"/>
+      <text x="963" y="392" text-anchor="middle" fill="#a6adc8">Mid-level</text>
+    </g>
+  </g>
+</svg>
