@@ -1,0 +1,39 @@
+{
+ "schema": 1,
+ "generated": "2026-10-31T21:40:38+0800",
+ "_why": "事实台账：每条 = 一个**测出来**的值 + 复跑命令 + 出处。别手改，跑 zreflect/facts.py。",
+ "facts": {
+  "card_svg": {
+   "value": 1,
+   "cmd": "test -f card/card.svg && echo 1 || echo 0",
+   "source": "card/card.svg",
+   "measured_at": "2026-10-31T21:40:38+0800",
+   "first_seen": "2026-10-31",
+   "note": "卡片矢量源（可编辑的真相源）"
+  },
+  "card_png": {
+   "value": 1,
+   "cmd": "test -f card/card.png && echo 1 || echo 0",
+   "source": "card/card.png",
+   "measured_at": "2026-10-31T21:40:38+0800",
+   "first_seen": "2026-10-31",
+   "note": "卡片渲染产物（主页实际显示的那张）"
+  },
+  "readme_refs_card": {
+   "value": 1,
+   "cmd": "grep -qE 'card\\.(svg|png)' README.md && echo 1 || echo 0",
+   "source": "README.md",
+   "measured_at": "2026-10-31T21:40:38+0800",
+   "first_seen": "2026-10-31",
+   "note": "README 是否引用了卡片（profile 仓的唯一功能就是这条引用）"
+  },
+  "readme_external_links": {
+   "value": 0,
+   "cmd": "python3 -c \"import re;t=open('README.md',encoding='utf-8').read();print(len(re.findall(r'\\]\\((https?://[^)]+)\\)',t)))\"",
+   "source": "README.md",
+   "measured_at": "2026-10-31T21:40:38+0800",
+   "first_seen": "2026-10-31",
+   "note": "README 里的外部链接数（含图片与普通链接；外链越多主页越依赖别人的可用性）"
+  }
+ }
+}
