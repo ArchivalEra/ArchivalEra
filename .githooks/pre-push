@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Git pre-push: Einfacht facts check + commit-phase gates.
+#
+# Embedded instead of using reflect-hooks/pre-push: that one carries the
+# "trilingual README must move together" push-set rule, which does not apply
+# here -- this repo is a GitHub profile repo with a single README, and
+# rewriting the profile facade on every push is backwards.
+set -euo pipefail
+REPO="$(git rev-parse --show-toplevel 2>/dev/null || echo .)"
+cd "$REPO"
+if [ -f zreflect/facts.py ]; then
+  [ -f reflect-hooks/Einfacht.env ] && . reflect-hooks/Einfacht.env
+  DOC="${REFLECT_DOC:-STATE.md}"
+  if [ -f "$DOC" ]; then
+    python3 zreflect/facts.py --check "$DOC" || exit 1
+  fi
+  python3 zreflect/registry.py --run commit || exit 1
+fi
+echo "OK [pre-push] facts + gates"
